@@ -1,0 +1,6 @@
+C:\Users\Alumno\Desktop\Etapa 0\0-Nina_0\0-Nina_0\bin\Debug\0-Nina_0.exe.config
+C:\Users\Alumno\Desktop\Etapa 0\0-Nina_0\0-Nina_0\bin\Debug\0-Nina_0.exe
+C:\Users\Alumno\Desktop\Etapa 0\0-Nina_0\0-Nina_0\bin\Debug\0-Nina_0.pdb
+C:\Users\Alumno\Desktop\Etapa 0\0-Nina_0\0-Nina_0\obj\Debug\0-Nina_0.csprojResolveAssemblyReference.cache
+C:\Users\Alumno\Desktop\Etapa 0\0-Nina_0\0-Nina_0\obj\Debug\0-Nina_0.exe
+C:\Users\Alumno\Desktop\Etapa 0\0-Nina_0\0-Nina_0\obj\Debug\0-Nina_0.pdb
