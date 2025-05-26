@@ -1,6 +1,0 @@
-C:\Users\Alumno\Desktop\Kevin\Etapa 2\2-Nina_4\2-Nina_4\bin\Debug\2-Nina_4.exe.config
-C:\Users\Alumno\Desktop\Kevin\Etapa 2\2-Nina_4\2-Nina_4\bin\Debug\2-Nina_4.exe
-C:\Users\Alumno\Desktop\Kevin\Etapa 2\2-Nina_4\2-Nina_4\bin\Debug\2-Nina_4.pdb
-C:\Users\Alumno\Desktop\Kevin\Etapa 2\2-Nina_4\2-Nina_4\obj\Debug\2-Nina_4.csprojResolveAssemblyReference.cache
-C:\Users\Alumno\Desktop\Kevin\Etapa 2\2-Nina_4\2-Nina_4\obj\Debug\2-Nina_4.exe
-C:\Users\Alumno\Desktop\Kevin\Etapa 2\2-Nina_4\2-Nina_4\obj\Debug\2-Nina_4.pdb
