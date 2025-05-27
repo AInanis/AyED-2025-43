@@ -1,0 +1,6 @@
+c:\users\usuario\documents\AyED-2025\Etapa 1\1-Siñani_7\1-Siñani_7\bin\Debug\1-Siñani_7.exe.config
+c:\users\usuario\documents\AyED-2025\Etapa 1\1-Siñani_7\1-Siñani_7\bin\Debug\1-Siñani_7.exe
+c:\users\usuario\documents\AyED-2025\Etapa 1\1-Siñani_7\1-Siñani_7\bin\Debug\1-Siñani_7.pdb
+c:\users\usuario\documents\AyED-2025\Etapa 1\1-Siñani_7\1-Siñani_7\obj\Debug\1-Siñani_7.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\AyED-2025\Etapa 1\1-Siñani_7\1-Siñani_7\obj\Debug\1-Siñani_7.exe
+c:\users\usuario\documents\AyED-2025\Etapa 1\1-Siñani_7\1-Siñani_7\obj\Debug\1-Siñani_7.pdb
