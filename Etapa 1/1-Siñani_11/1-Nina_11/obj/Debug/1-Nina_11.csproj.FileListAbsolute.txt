@@ -1,0 +1,5 @@
+C:\Users\Alumno\Desktop\Etapa 1\1-Nina_11\1-Nina_11\bin\Debug\1-Nina_11.exe.config
+C:\Users\Alumno\Desktop\Etapa 1\1-Nina_11\1-Nina_11\bin\Debug\1-Nina_11.exe
+C:\Users\Alumno\Desktop\Etapa 1\1-Nina_11\1-Nina_11\bin\Debug\1-Nina_11.pdb
+C:\Users\Alumno\Desktop\Etapa 1\1-Nina_11\1-Nina_11\obj\Debug\1-Nina_11.exe
+C:\Users\Alumno\Desktop\Etapa 1\1-Nina_11\1-Nina_11\obj\Debug\1-Nina_11.pdb
