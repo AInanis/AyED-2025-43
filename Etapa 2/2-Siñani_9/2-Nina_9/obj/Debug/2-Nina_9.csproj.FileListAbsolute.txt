@@ -1,0 +1,6 @@
+C:\Users\Alumno\Desktop\Kevin\Etapa 2\2-Nina_9\2-Nina_9\bin\Debug\2-Nina_9.exe.config
+C:\Users\Alumno\Desktop\Kevin\Etapa 2\2-Nina_9\2-Nina_9\bin\Debug\2-Nina_9.exe
+C:\Users\Alumno\Desktop\Kevin\Etapa 2\2-Nina_9\2-Nina_9\bin\Debug\2-Nina_9.pdb
+C:\Users\Alumno\Desktop\Kevin\Etapa 2\2-Nina_9\2-Nina_9\obj\Debug\2-Nina_9.csprojResolveAssemblyReference.cache
+C:\Users\Alumno\Desktop\Kevin\Etapa 2\2-Nina_9\2-Nina_9\obj\Debug\2-Nina_9.exe
+C:\Users\Alumno\Desktop\Kevin\Etapa 2\2-Nina_9\2-Nina_9\obj\Debug\2-Nina_9.pdb
