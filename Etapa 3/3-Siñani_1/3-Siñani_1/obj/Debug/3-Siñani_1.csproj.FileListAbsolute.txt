@@ -1,0 +1,5 @@
+c:\users\usuario\documents\AyED-2025\Etapa 3\3-Siñani_1\3-Siñani_1\bin\Debug\3-Siñani_1.exe.config
+c:\users\usuario\documents\AyED-2025\Etapa 3\3-Siñani_1\3-Siñani_1\bin\Debug\3-Siñani_1.exe
+c:\users\usuario\documents\AyED-2025\Etapa 3\3-Siñani_1\3-Siñani_1\bin\Debug\3-Siñani_1.pdb
+c:\users\usuario\documents\AyED-2025\Etapa 3\3-Siñani_1\3-Siñani_1\obj\Debug\3-Siñani_1.exe
+c:\users\usuario\documents\AyED-2025\Etapa 3\3-Siñani_1\3-Siñani_1\obj\Debug\3-Siñani_1.pdb
