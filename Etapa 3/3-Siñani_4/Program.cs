@@ -4,59 +4,45 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Nivel 3 – Firewalls adyacentes (LITE)");
-        int[,] g =
-        {
-            {0,1,0},
-            {1,0,1},
-            {0,1,0}
-        };
-        bool ok = Level3.CountAdjacent(g, 1, 1) == 4
-               && Level3.CountAdjacent(g, 0, 0) == 2;
-        Console.WriteLine(ok ? "✔ UNLOCK → Fragmento: -OK" : "🔒 LOCKED");
+        Console.WriteLine("Nivel 1 – Validación de llave (LITE)");
+        bool ok = Level1.ValidateAccessKey("WD-700000")
+                  && !Level1.ValidateAccessKey("WD-123123")
+                  && !Level1.ValidateAccessKey("WX-000007")
+                  && !Level1.ValidateAccessKey("WD-00007");
+        if (ok) Console.WriteLine("✔ UNLOCK → Fragmento: CT");
+        else Console.WriteLine("🔒 LOCKED");
     }
 }
 
-static class Level3
+static class Level1
 {
-    public static int CountAdjacent(int[,] grid, int row, int col)
+    // Debe devolver true solo si:
+    // - Empieza por "WD-"
+    // - Luego hay exactamente 6 dígitos
+    // - La suma de esos 6 dígitos es múltiplo de 7
+    public static bool ValidateAccessKey(string key)
     {
-        int rows = grid.GetLength(0);
-        int cols = grid.GetLength(1);
-        int count = 0;
-
-       
-        if (row - 1 >= 0 && grid[row - 1, col] == 1)
+        if (key.StartsWith("WD-"))
         {
-            count++;
+            return true;
         }
-
-        
-        if (row + 1 < rows && grid[row + 1, col] == 1)
+        if (char.IsDigit(6))
         {
-            count++;
-        }
+            return true;
 
-        
-        if (col - 1 >= 0 && grid[row, col - 1] == 1)
+        }
+        int suma = 0;
+        for (int i = 3; i < key.Length; i++)
         {
-            count++;
+            char c = key[i];
+            if (char.IsDigit(c))
+            {
+                return true;
+            }
+          
+            suma += c - '0';
         }
-
-        if (col + 1 < cols && grid[row, col + 1] == 1)
-        {
-            count++;
-        }
-
-        return count;
-    }
-}
-
-
-
         // TODO: implementar
-        // Considerar vecinos: (r-1,c), (r+1,c), (r,c-1), (r,c+1)
-        // Devolver cuántos valen 1
-        return 0; // <- reemplazar por tu solución
+        return suma % 7 == 0;// <- reemplazar por tu solución
     }
 }
