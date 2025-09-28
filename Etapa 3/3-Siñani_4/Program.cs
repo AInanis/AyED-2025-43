@@ -4,45 +4,42 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Nivel 1 – Validación de llave (LITE)");
-        bool ok = Level1.ValidateAccessKey("WD-700000")
-                  && !Level1.ValidateAccessKey("WD-123123")
-                  && !Level1.ValidateAccessKey("WX-000007")
-                  && !Level1.ValidateAccessKey("WD-00007");
-        if (ok) Console.WriteLine("✔ UNLOCK → Fragmento: CT");
-        else Console.WriteLine("🔒 LOCKED");
+        Console.WriteLine("Nivel 2 – Ping Check (LITE)");
+        int[] p = { 13, 250, -5, 40, 40, 40, 100, 205, 100 }; // válidos: 13, 40, 100 en idx 0,3,6
+        int s = Level2.SumValidEveryThird(p);
+        bool ok = s == (13 + 40 + 100); // 153
+        Console.WriteLine(ok ? "✔ UNLOCK → Fragmento: -ACCESS" : "🔒 LOCKED");
     }
 }
 
-static class Level1
+static class Level2
 {
-    // Debe devolver true solo si:
-    // - Empieza por "WD-"
-    // - Luego hay exactamente 6 dígitos
-    // - La suma de esos 6 dígitos es múltiplo de 7
-    public static bool ValidateAccessKey(string key)
+    // Sumar p[i] para i % 3 == 0, solo si 0 <= p[i] <= 200
+    public static int SumValidEveryThird(int[] p)
     {
-        if (key.StartsWith("WD-"))
+        int valor = 0;
+        for (int i = 0; i < p.lenght; i++)
         {
-            return true;
-        }
-        if (char.IsDigit(6))
-        {
-            return true;
-
-        }
-        int suma = 0;
-        for (int i = 3; i < key.Length; i++)
-        {
-            char c = key[i];
-            if (char.IsDigit(c))
+            bool Veri_1, Ver_2;
+            if (p[i] % 3 == 0)
             {
-                return true;
+                Veri_1 = true;
+
             }
-          
-            suma += c - '0';
+            if (p[i] <= 0 && p[i] >= 200)
+            {
+                Ver_2 = true;
+            }
+
+            if (Veri_1 == true && Ver_2 == true)
+            {
+                valor = valor + p[i];
+
+            }
         }
+
+
         // TODO: implementar
-        return suma % 7 == 0;// <- reemplazar por tu solución
+        return valor; // <- reemplazar por tu solución
     }
 }
