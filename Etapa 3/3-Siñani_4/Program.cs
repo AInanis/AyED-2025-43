@@ -4,42 +4,59 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Nivel 2 – Ping Check (LITE)");
-        int[] p = { 13, 250, -5, 40, 40, 40, 100, 205, 100 }; // válidos: 13, 40, 100 en idx 0,3,6
-        int s = Level2.SumValidEveryThird(p);
-        bool ok = s == (13 + 40 + 100); // 153
-        Console.WriteLine(ok ? "✔ UNLOCK → Fragmento: -ACCESS" : "🔒 LOCKED");
+        Console.WriteLine("Nivel 3 – Firewalls adyacentes (LITE)");
+        int[,] g =
+        {
+            {0,1,0},
+            {1,0,1},
+            {0,1,0}
+        };
+        bool ok = Level3.CountAdjacent(g, 1, 1) == 4
+               && Level3.CountAdjacent(g, 0, 0) == 2;
+        Console.WriteLine(ok ? "✔ UNLOCK → Fragmento: -OK" : "🔒 LOCKED");
     }
 }
 
-static class Level2
+static class Level3
 {
-    // Sumar p[i] para i % 3 == 0, solo si 0 <= p[i] <= 200
-    public static int SumValidEveryThird(int[] p)
+    public static int CountAdjacent(int[,] grid, int row, int col)
     {
-        int valor = 0;
-        for (int i = 0; i < p.lenght; i++)
+        int rows = grid.GetLength(0);
+        int cols = grid.GetLength(1);
+        int count = 0;
+
+       
+        if (row - 1 >= 0 && grid[row - 1, col] == 1)
         {
-            bool Veri_1, Ver_2;
-            if (p[i] % 3 == 0)
-            {
-                Veri_1 = true;
-
-            }
-            if (p[i] <= 0 && p[i] >= 200)
-            {
-                Ver_2 = true;
-            }
-
-            if (Veri_1 == true && Ver_2 == true)
-            {
-                valor = valor + p[i];
-
-            }
+            count++;
         }
+
+        
+        if (row + 1 < rows && grid[row + 1, col] == 1)
+        {
+            count++;
+        }
+
+        
+        if (col - 1 >= 0 && grid[row, col - 1] == 1)
+        {
+            count++;
+        }
+
+        if (col + 1 < cols && grid[row, col + 1] == 1)
+        {
+            count++;
+        }
+
+        return count;
+    }
+}
+
 
 
         // TODO: implementar
-        return valor; // <- reemplazar por tu solución
+        // Considerar vecinos: (r-1,c), (r+1,c), (r,c-1), (r,c+1)
+        // Devolver cuántos valen 1
+        return 0; // <- reemplazar por tu solución
     }
 }
